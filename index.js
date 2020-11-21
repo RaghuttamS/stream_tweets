@@ -8,7 +8,7 @@ var configFile = require('./config/TwitterApiConfig.json');
 
 
 /*Twitter object to access data*/
-var T = new Twit(configFile);
+var twitterObj = new Twit(configFile);
 
 app.use(express.static(__dirname + '/public'))
     /*Api to display index page*/
@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 app.get('/tweets', function(req, res) {
     console.log(req.query.source);
     var query_string = req.query.source;
-    T.get('search/tweets', { q: query_string, count: 100 }, function(err, data, response) {
+    twitterObj.get('search/tweets', { q: query_string, count: 100 }, function(err, data, response) {
         //console.log(data)
         res.send(JSON.stringify(data));
     });
@@ -30,7 +30,7 @@ app.get('/tweets', function(req, res) {
 app.get('/tweets/username', function(req, res) {
     console.log(req.query.source);
     var query_string = req.query.source;
-    T.get('statuses/user_timeline', { screen_name: query_string, count: 100 }, function(err, data, response) {
+    twitterObj.get('statuses/user_timeline', { screen_name: query_string, count: 100 }, function(err, data, response) {
         //console.log(data)
         res.send(JSON.stringify(data));
     });
