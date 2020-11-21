@@ -1,0 +1,24 @@
+  #top_menu_row {
+      margin-top: 17px;
+  }
+  
+  body {
+      background-color: lavender;
+  }
+  
+  #tweets_container {
+      margin-top: 15px;
+  }
+  
+  img.card-img-top.rounded-0 {
+      height: 350px;
+      width: 700px;
+  }
+  
+  .media_div {
+      text-align: center;
+  }
+  
+  .card.border-success.mb-3 {
+      width: 1001px;
+  }

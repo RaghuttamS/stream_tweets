@@ -1,0 +1,9 @@
+
+{
+    "consumer_key":"92YOEckIXeUNYzzKw0HQpihBC",
+    "consumer_secret":"ydUmssFIFcK8v3Mw60DTybsZUeu6tcB7udfPvjHMMUVOzf6XO3",
+    "access_token":"1328563387136053248-df7DrOnsvVd825RGPctu0IY0vD2sv6",
+    "access_token_secret":"He0Dvk6qSsPxZ2DgsCuFZMpjnJhjYM78HmMJOqOho97XM",
+    "timeout_ms":60000,
+    "strictSSL":true
+}
